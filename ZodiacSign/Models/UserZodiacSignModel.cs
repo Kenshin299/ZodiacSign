@@ -2,7 +2,7 @@
 {
     public class UserZodiacSignModel
     {
-        public int BirthDay { get; set; }
-        public int BirthMonth { get; set; }
+        public DateOnly BirthDate{ get; set; }
+        public string? ZodiacSign{ get; set; }
     }
 }

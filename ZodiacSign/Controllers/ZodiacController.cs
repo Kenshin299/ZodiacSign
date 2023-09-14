@@ -18,6 +18,13 @@ namespace ZodiacSign.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult ZodiacSign(UserZodiacSignModel user)
+        {
+
+            return View("Index", user.ZodiacSign);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

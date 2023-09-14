@@ -1,4 +1,14 @@
 ﻿
-<div class="text-center">
-    <h1 class="display-4">Hola Amigos soy yo mikey mosue Ajaasdfasdfasdfasdfasdf</h1>
+
+
+<div class="container-fluid w-25">
+    <form asp-action="DeterminarSigno" class="form">
+        <div class="form-group">
+            <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Determinar Signo</button>
+    </form>
+    <h2>Tu signo zodiacal es:</h2>
+    <p>Resultado xD</p>
 </div>
