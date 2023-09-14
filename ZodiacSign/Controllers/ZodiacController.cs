@@ -15,7 +15,6 @@ namespace ZodiacSign.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation("Acces to index :)");
             return View();
         }
 
