@@ -1,14 +1,14 @@
-﻿
+﻿@model ZodiacSign.Models.UserZodiacSignModel
 
-
-<div class="container-fluid w-25">
-    <form asp-action="DeterminarSigno" class="form">
+<div id="form-container" class="container-fluid w-25 p-3">
+    <form asp-action="ZodiacSign" class="form" method="post">
         <div class="form-group">
-            <label for="FechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" required>
+            <h2>Fecha&nbsp;de&nbsp;Nacimiento:</h2>
+            <label for="Day">Día</label>
+            <input asp-for="Day" type="number" class="form-control" id="Day" name="Day" min="1" max="31" required>
+            <label for="Day">Mes</label>
+            <input asp-for="Month" type="number" class="form-control" id="Month" name="Month" min="1" max="12" required>
         </div>
-        <button type="submit" class="btn btn-primary">Determinar Signo</button>
+        <button type="submit" class="btn btn-primary mt-2">Determinar Signo</button>
     </form>
-    <h2>Tu signo zodiacal es:</h2>
-    <p>Resultado xD</p>
 </div>
